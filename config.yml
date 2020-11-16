@@ -1,0 +1,16 @@
+title: Coursera Exercise
+description: Coursera IBM course section 2 week 2 exercise
+template:
+  repo: coursera-exercise-template
+  name: coursera-exercise
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
